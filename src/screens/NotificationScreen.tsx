@@ -1,5 +1,6 @@
 import React, { JSX } from 'react';
-import {View, StyleSheet, SafeAreaView, Text, ScrollView} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
+import {View, StyleSheet, Text, ScrollView} from 'react-native';
 import NoticationBox from '../component/NoticationBox';
 
 function NotificationScreen(): JSX.Element {

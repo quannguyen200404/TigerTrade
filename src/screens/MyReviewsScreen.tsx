@@ -1,5 +1,6 @@
 import React, { JSX } from 'react';
-import {StyleSheet, SafeAreaView, ScrollView, View} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
+import {StyleSheet, ScrollView, View} from 'react-native';
 import ScreenTitle from '../component/ScreenTitle';
 import MyReviewsBox from '../component/MyReviewsBox';
 

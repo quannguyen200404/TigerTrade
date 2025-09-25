@@ -1,7 +1,7 @@
 import React, { JSX } from 'react';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {
   StyleSheet,
-  SafeAreaView,
   ScrollView,
   TouchableOpacity,
   View,

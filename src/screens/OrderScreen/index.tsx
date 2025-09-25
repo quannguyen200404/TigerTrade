@@ -1,7 +1,7 @@
 import React, {JSX, useCallback, useState} from 'react';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {
   StyleSheet,
-  SafeAreaView,
   useWindowDimensions,
   Text,
   BackHandler,

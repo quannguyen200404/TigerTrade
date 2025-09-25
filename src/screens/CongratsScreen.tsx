@@ -1,8 +1,8 @@
 import React, {JSX, useCallback} from 'react';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {
   View,
   StyleSheet,
-  SafeAreaView,
   Text,
   Image,
   TouchableOpacity,

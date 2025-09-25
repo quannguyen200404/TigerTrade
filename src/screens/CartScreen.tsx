@@ -1,10 +1,10 @@
 import {useNavigation} from '@react-navigation/native';
 import React, {JSX, useEffect, useRef, useState} from 'react';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {
   View,
   FlatList,
   StyleSheet,
-  SafeAreaView,
   Text,
   TouchableOpacity,
 } from 'react-native';

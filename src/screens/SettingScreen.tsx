@@ -1,7 +1,7 @@
 import React, {JSX, useRef, useState} from 'react';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {
   StyleSheet,
-  SafeAreaView,
   View,
   Text,
   Pressable,

@@ -1,8 +1,8 @@
 import React, {JSX, useEffect, useRef, useState} from 'react';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {
   View,
   StyleSheet,
-  SafeAreaView,
   Pressable,
   Text,
   TextInput,

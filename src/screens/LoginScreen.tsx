@@ -1,7 +1,7 @@
 import React, {JSX, useEffect, useRef, useState} from 'react';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {
   Pressable,
-  SafeAreaView,
   StyleSheet,
   Text,
   TextInput,
@@ -64,7 +64,7 @@ function LoginScreen(): JSX.Element {
   }
 
   const isValidEmail = (validEmail: string) => {
-    const emailRegex = /^[^\s@]+@gmail\.com$/;
+    const emailRegex = /^[^\s@]+@depauw\.edu$/;
     return emailRegex.test(validEmail);
   };
 
@@ -89,7 +89,7 @@ function LoginScreen(): JSX.Element {
       setEmailError('Please enter your email.');
       return;
     } else if (!isValidEmail(email)) {
-      setEmailError('Invalid email.');
+      setEmailError('Please use a valid @depauw.edu email.');
       return;
     }
     setEmailError('');
@@ -98,7 +98,7 @@ function LoginScreen(): JSX.Element {
       setPasswordError('Please enter your password.');
       return;
     } else if (password.length < 6) {
-      setPasswordError('Incorrect password.');
+      setPasswordError('Password must be at least 6 characters.');
       return;
     }
     setPasswordError('');
@@ -143,10 +143,10 @@ function LoginScreen(): JSX.Element {
 
   const handleResetPassword = () => {
     if (!email) {
-      setEmailError('Please enter your email.');
+      setEmailError('Please enter your email to reset password.');
       return;
     } else if (!isValidEmail(email)) {
-      setEmailError('Invalid email.');
+      setEmailError('Please use a valid @depauw.edu email.');
       return;
     }
     setEmailError('');
@@ -154,7 +154,7 @@ function LoginScreen(): JSX.Element {
       .auth()
       .sendPasswordResetEmail(email)
       .then(() => {
-        setPasswordReset('Please check your email inbox.');
+        setPasswordReset('Password reset link sent to your email inbox.');
       })
       .catch(error => {
         if (error.code === 'auth/user-not-found') {
@@ -243,7 +243,6 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 32,
     marginHorizontal: 24,
-    height: 396,
     elevation: 10,
     backgroundColor: 'white',
   },

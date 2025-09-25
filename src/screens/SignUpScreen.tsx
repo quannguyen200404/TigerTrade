@@ -1,7 +1,7 @@
 import React, {JSX, useRef, useState} from 'react';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {
   Pressable,
-  SafeAreaView,
   StyleSheet,
   Text,
   TextInput,
@@ -61,7 +61,7 @@ function SignUpScreen(): JSX.Element {
   }
 
   const isValidEmail = (validEmail: string) => {
-    const emailRegex = /^[^\s@]+@gmail\.com$/;
+    const emailRegex = /^[^\s@]+@depauw\.edu$/;
     return emailRegex.test(validEmail);
   };
 
@@ -93,7 +93,7 @@ function SignUpScreen(): JSX.Element {
       setEmailError('Please enter your email.');
       return;
     } else if (!isValidEmail(email)) {
-      setEmailError('Invalid email.');
+      setEmailError('Please use a valid @depauw.edu email.');
       return;
     }
     setEmailError('');
@@ -239,7 +239,6 @@ const styles = StyleSheet.create({
   loginForm: {
     marginTop: 32,
     marginHorizontal: 24,
-    height: 520,
     elevation: 4,
     backgroundColor: 'white',
   },

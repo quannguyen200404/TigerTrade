@@ -1,5 +1,6 @@
 import React, {JSX, useState} from 'react';
-import {StyleSheet, SafeAreaView, View, FlatList} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
+import {StyleSheet, View, FlatList} from 'react-native';
 import {realmContext} from '../realm/RealmContext';
 import {ShippingAddress} from '../realm/ShippingAddress';
 import ScreenTitle from '../component/ScreenTitle';
