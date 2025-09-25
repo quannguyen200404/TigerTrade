@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "158729852030",
+    "project_id": "tiger-trade-f6e65",
+    "storage_bucket": "tiger-trade-f6e65.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158729852030:android:05a748357ac9ec3805742f",
+        "android_client_info": {
+          "package_name": "com.tigertrade"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2KnTuwWxN_a3_OM7ewajcH0NTPxfZZ28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
