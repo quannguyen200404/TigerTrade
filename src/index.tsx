@@ -12,12 +12,12 @@ import messaging, {
 
 if (!firebase.apps.length) {
   firebase.initializeApp({
-    apiKey: 'AIzaSyC2KnTuwWxN_a3_OM7ewajcH0NTPxfZZ28',
-    authDomain: 'tiger-trade-f6e65.firebaseapp.com',
-    projectId: 'tiger-trade-f6e65',
-    storageBucket: 'tiger-trade-f6e65.firebasestorage.app',
-    messagingSenderId: '158729852030',
-    appId: '1:158729852030:android:790fd49c365e416c05742f',
+    apiKey: '',
+    authDomain: '',
+    projectId: '',
+    storageBucket: '',
+    messagingSenderId: '',
+    appId: '',
   });
 }
 
