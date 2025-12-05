@@ -23,13 +23,11 @@ const renderTabBar = (props: any) => {
   return (
     <TabBar
       {...props}
-      renderLabel={({
-        route,
-        focused,
-      }: {
-        route: { key: string; title: string };
-        focused: boolean;
-      }) => (
+      // Explicit colors and label style to avoid theme overrides making text white
+      activeColor="#000000"
+      inactiveColor="#7A7A7A"
+      labelStyle={styles.labelStyle}
+      renderLabel={({route, focused}: {route: {key: string; title: string}; focused: boolean}) => (
         <Text style={focused ? styles.activeLabel : styles.inactiveLabel}>
           {route.title}
         </Text>
@@ -102,5 +100,10 @@ const styles = StyleSheet.create({
     marginTop: 20,
     elevation: 0,
     backgroundColor: 'white',
+  },
+  labelStyle: {
+    fontSize: 18,
+    fontWeight: '600',
+    textTransform: 'none',
   },
 });

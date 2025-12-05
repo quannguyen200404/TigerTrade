@@ -120,6 +120,12 @@ function ProductDetailsScreen({route}: Props): JSX.Element {
               </Pressable>
               <Text style={styles.totalRating}>(50 reviews)</Text>
             </View>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate('Chat');
+              }}>
+              <Text style={styles.seller}>Sold by tomhoward_2026</Text>
+            </TouchableOpacity>
             <Text style={styles.description}>
               {headerName} is made of by natural wood. The design that is very
               simple and minimal. This is truly one of the best furnitures in
@@ -242,6 +248,12 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     fontSize: 14,
     color: '#909090',
+  },
+  seller: {
+    fontWeight: '500',
+    fontSize: 16,
+    color: '#242424',
+    textDecorationLine: 'underline',
   },
   description: {
     fontWeight: '400',

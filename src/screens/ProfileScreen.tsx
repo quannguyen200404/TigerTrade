@@ -64,6 +64,11 @@ function ProfileScreen(): JSX.Element {
             description={'Already have 3 orders'}
           />
           <ProfileButton
+            screenName={'MyListings'}
+            title={'My Listings'}
+            description={'Manage your items for sale'}
+          />
+          <ProfileButton
             screenName={'ShippingAddress'}
             title={'Shipping Addresses'}
             description={

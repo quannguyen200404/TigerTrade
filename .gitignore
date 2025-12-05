@@ -66,6 +66,9 @@ yarn-error.log
 # testing
 /coverage
 
+# API Keys and sensitive configuration
+src/config/config.ts
+
 # Yarn
 .yarn/*
 !.yarn/patches

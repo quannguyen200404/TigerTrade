@@ -8,10 +8,14 @@ import {
   SignUpScreen,
   ProductDetailsScreen,
   CartScreen,
+  ChatScreen,
+  ChatAIScreen,
   CheckOutScreen,
   CongratsScreen,
   ReviewScreen,
   OrderScreen,
+  MyListingsScreen,
+  CreateListingScreen,
   ShippingAddressScreen,
   PaymentMethodScreen,
   MyReviewsScreen,
@@ -58,10 +62,14 @@ const AppStack = () => {
       <Stack.Screen name="Home" component={HomeTab} />
       <Stack.Screen name="ProductDetails" component={ProductDetailsScreen} />
       <Stack.Screen name="Cart" component={CartScreen} />
+      <Stack.Screen name="Chat" component={ChatScreen} />
+      <Stack.Screen name="ChatAI" component={ChatAIScreen} />
       <Stack.Screen name="CheckOut" component={CheckOutScreen} />
       <Stack.Screen name="Congrats" component={CongratsScreen} />
       <Stack.Screen name="Review" component={ReviewScreen} />
       <Stack.Screen name="Order" component={OrderScreen} />
+      <Stack.Screen name="MyListings" component={MyListingsScreen} />
+      <Stack.Screen name="CreateListing" component={CreateListingScreen} />
       <Stack.Screen name="ShippingAddress" component={ShippingAddressScreen} />
       <Stack.Screen name="PaymentMethod" component={PaymentMethodScreen} />
       <Stack.Screen name="MyReviews" component={MyReviewsScreen} />

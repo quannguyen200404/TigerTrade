@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {JSX, useState} from 'react';
 import {StyleSheet, Text, View, Switch} from 'react-native';
 
 type Props = {

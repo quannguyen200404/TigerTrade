@@ -10,6 +10,7 @@ import {
   HomeScreen,
   FavoriteScreen,
   NotificationScreen,
+  ChatListScreen,
   ProfileScreen,
 } from '../../screens';
 
@@ -36,6 +37,8 @@ const screenOptions = ({route}: {route: RouteProp<HomeTabParamList>}) =>
         iconName = focused ? 'bookmark' : 'bookmark-outline';
       } else if (route.name === 'Notification') {
         iconName = focused ? 'notifications' : 'notifications-outline';
+      } else if (route.name === 'ChatList') {
+        iconName = focused ? 'chatbubbles' : 'chatbubbles-outline';
       } else if (route.name === 'Profile') {
         iconName = focused ? 'person' : 'person-outline';
       }
@@ -62,6 +65,11 @@ function HomeTab(): JSX.Element {
       <Tab.Screen
         name="Notification"
         component={NotificationScreen}
+        options={{headerShown: false}}
+      />
+      <Tab.Screen
+        name="ChatList"
+        component={ChatListScreen}
         options={{headerShown: false}}
       />
       <Tab.Screen

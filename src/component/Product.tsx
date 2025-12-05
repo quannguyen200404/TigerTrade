@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import Fontisto from 'react-native-vector-icons/Fontisto';
-import {TProduct} from 'types/object';
+import {TProduct} from '../types/object';
 
 type Props = {
   product: TProduct;

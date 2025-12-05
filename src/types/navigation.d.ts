@@ -5,6 +5,7 @@ export type HomeTabParamList = {
   House: undefined;
   Favorite: undefined;
   Notification: undefined;
+  ChatList: undefined;
   Profile: undefined;
 };
 
@@ -36,12 +37,18 @@ export type RootStackParamList = {
     imageLink: ImageSourcePropType;
   };
   Order: NavigatorScreenParams<OrderTabParamList> | undefined;
+  MyListings: undefined;
   ShippingAddress: undefined;
+  CreateListing: {
+    listingId?: string;
+  };
   PaymentMethod: undefined;
   MyReviews: undefined;
   AddShippingAddress: undefined;
   AddPayment: undefined;
   Setting: undefined;
+  Chat: undefined;
+  ChatAI: undefined;
 };
 
 declare global {
